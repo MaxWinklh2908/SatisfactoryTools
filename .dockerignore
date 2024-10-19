@@ -1,0 +1,10 @@
+Dockerfile
+
+# IDE stuff
+.idea
+.vscode
+
+# Satisfactory Data file for parsing
+data/Docs.json
+data/icons
+data/imageMapping.json
