@@ -86,10 +86,10 @@ export default function parseRecipes(recipes: {
 			}
 		}
 
-		// ignore converter recipes
-		if (producedIn.indexOf('Desc_Converter_C') !== -1) {
-			continue;
-		}
+		// // ignore converter recipes
+		// if (producedIn.indexOf('Desc_Converter_C') !== -1) {
+		// 	continue;
+		// }
 
 		let forBuilding = false;
 		let inMachine = false;
