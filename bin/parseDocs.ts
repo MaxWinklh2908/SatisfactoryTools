@@ -46,7 +46,6 @@ for (const definitions of docs) {
 		case '/Script/CoreUObject.Class\'/Script/FactoryGame.FGAmmoTypeInstantHit\'':
 		case '/Script/CoreUObject.Class\'/Script/FactoryGame.FGPowerShardDescriptor\'':
 		case '/Script/CoreUObject.Class\'/Script/FactoryGame.FGItemDescriptorPowerBoosterFuel\'':
-		case '/Script/CoreUObject.Class\'/Script/FactoryGame.FGPoleDescriptor\'':
 			for (const item of parseItemDescriptors(definitions.Classes)) {
 				json.items[item.className] = item;
 			}
@@ -189,6 +188,7 @@ for (const definitions of docs) {
 			}
 			break;
 		case '/Script/CoreUObject.Class\'/Script/FactoryGame.FGBuildingDescriptor\'':
+		case '/Script/CoreUObject.Class\'/Script/FactoryGame.FGPoleDescriptor\'':
 			extraInfo = parseBuildingDescriptors(definitions.Classes);
 			for (const item of parseImageMapping(definitions.Classes)) {
 				imageMapping[item.className] = item.image;
