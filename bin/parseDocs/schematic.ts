@@ -27,28 +27,29 @@ export default function parseSchematics(schematics: {
 {
 	const result: ISchematicSchema[] = [];
 	for (const schematic of schematics) {
-		// ignore custom schematics
-		if (schematic.mType === 'EST_Custom') {
-			continue;
-		}
+		// TODO: Why were these ignored?
+		// // ignore custom schematics
+		// if (schematic.mType === 'EST_Custom') {
+		// 	continue;
+		// }
 
-		// ignore ficsmas
-		if ([
-			'Research_XMas_1_C',
-			'Research_XMas_1-1_C',
-			'Research_XMas_1-2_C',
-			'Research_XMas_2_C',
-			'Research_XMas_2-1_C',
-			'Research_XMas_2-2_C',
-			'Research_XMas_3_C',
-			'Research_XMas_3-1_C',
-			'Research_XMas_4_C',
-			'Research_XMas_4-1_C',
-			'Research_XMas_4-2_C',
-			'Research_XMas_5_C',
-		].indexOf(schematic.ClassName) !== -1) {
-			continue;
-		}
+		// // ignore ficsmas
+		// if ([
+		// 	'Research_XMas_1_C',
+		// 	'Research_XMas_1-1_C',
+		// 	'Research_XMas_1-2_C',
+		// 	'Research_XMas_2_C',
+		// 	'Research_XMas_2-1_C',
+		// 	'Research_XMas_2-2_C',
+		// 	'Research_XMas_3_C',
+		// 	'Research_XMas_3-1_C',
+		// 	'Research_XMas_4_C',
+		// 	'Research_XMas_4-1_C',
+		// 	'Research_XMas_4-2_C',
+		// 	'Research_XMas_5_C',
+		// ].indexOf(schematic.ClassName) !== -1) {
+		// 	continue;
+		// }
 
 		const requiredSchematics: string[] = [];
 		const unlockData: ISchematicUnlockSchema = {
